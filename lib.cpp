@@ -1,11 +1,11 @@
 #include "lib.h"
 
-bool convert(char &z){
-    if(z>=65&&z<= 90){
-        z=z+32;
+bool convert(char &a){
+    if(a >= 65 && a <= 90){
+        a += 32;
         return true;
-    }else if(z>=97&&z<= 122){
-        z=z-32;
+    }else if(a >= 97 && a <= 122){
+        a -= 32;
         return true;
     }
     return false;
