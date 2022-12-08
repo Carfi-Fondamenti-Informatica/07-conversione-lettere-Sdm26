@@ -4,12 +4,13 @@
 using namespace std;
 
 int main() {
-    char z;
-    cin >> z;
-    if(con(z)){
-        cout << z << endl;
+    char a;
+    cin >> a;
+    if(convert(a)){
+        cout << a << endl;
     }else{
         cout << "errore" << endl;
     }
     return 0;
 }
+
