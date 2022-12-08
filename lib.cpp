@@ -1,12 +1,28 @@
 #include "lib.h"
-
-bool convert(char &a){
-    if(a >= 65 && a <= 90){
-        a += 32;
-        return true;
-    }else if(a >= 97 && a <= 122){
-        a -= 32;
-        return true;
+bool conv(char &z) {
+    int c = 0,d=0;
+    for (int i = 65; i<91; i++) {
+        char s = i;
+        if (z == s) {
+            z = s + 32;
+            c = 1;
+            d=1;
+            return true;
+            break;
+        }
     }
-    return false;
+    if(d==0) {
+        for (int i = 97; i<123; i++) {
+            char s = i;
+            if (z == s) {
+                z = s - 32;
+                c = 1;
+                return true;
+                break;
+            }
+        }
+    }
+    if (c == 0) {
+        return false;
+    }
 }
