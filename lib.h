@@ -1,6 +1,6 @@
 
-#ifndef INC_08_12_2022_S_H
-#define INC_08_12_2022_S_H
-bool conv(char&);
-#endif
+#ifndef ES7_LIB_H
+#define ES7_LIB_H
+bool convert(char &);
+#endif 
 
