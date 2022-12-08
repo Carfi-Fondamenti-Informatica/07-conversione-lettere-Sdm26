@@ -1,28 +1,12 @@
 #include "lib.h"
 bool conv(char &z) {
-    int c = 0,d=0;
-    for (int i = 65; i<91; i++) {
-        char s = i;
-        if (z == s) {
-            z = s + 32;
-            c = 1;
-            d=1;
-            return true;
-            break;
-        }
-    }
-    if(d==0) {
-        for (int i = 97; i<123; i++) {
-            char s = i;
-            if (z == s) {
-                z = s - 32;
-                c = 1;
-                return true;
-                break;
-            }
-        }
-    }
-    if (c == 0) {
-        return false;
-    }
+ if(z>=65&&z<=90){
+     z=z+32;
+     return true;
+}else if(z>=97&&z<=122){
+     z=z-32;
+     return true;
 }
+    return false;
+}
+   
